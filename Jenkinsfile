@@ -12,7 +12,7 @@ node{
   }
   stage('Code Quality Analysis'){    
     withSonarQubeEnv('sonar'){
-                 sh 'mvn sonar:sonar -Dsonar.organization=arpan74 -Dsonar.projectKey=arpan74'		
+                 sh 'mvn sonar:sonar -Dsonar.organization=arpan74 -Dsonar.projectKey=credit-service-arpan74'		
     		}
   }
 
