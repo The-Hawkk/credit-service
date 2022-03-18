@@ -10,10 +10,4 @@ node{
   stage('run test'){
   sh('mvn test')
   }
-  stage('Code Quality Analysis'){    
-    withSonarQubeEnv('sonar'){
-                 sh 'mvn sonar:sonar -Dsonar.organization=arpan74 -Dsonar.projectKey=credit-service-arpan74'		
-    		}
-  }
-
 }
